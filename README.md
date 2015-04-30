@@ -12,5 +12,8 @@ perl<br>
 "parse_samtool_mpileup.pl"<br>
 <code>$perl parse_samtool_mpileup.pl -i \<pileupfile\> -p [0.7] -d [0] </code>
 
+#Publication
+Imashimizu et al. 2015
+
 #Author
 Hiroki Takahashi
