@@ -7,10 +7,10 @@ perl<br>
 
 #Usage
 "count_error_bp.pl"<br>
-<pre><code>$perl count_error_bp.pl -i \<sam file\> -l \<read length\> </code></pre>
+<pre><code>$perl count_error_bp.pl -i [sam file] -l [read length] </code></pre>
 
 "parse_samtool_mpileup.pl"<br>
-<pre><code>$perl parse_samtool_mpileup.pl -i \<pileupfile\> -p [0.7] -d [0] </code></pre>
+<pre><code>$perl parse_samtool_mpileup.pl -i [pileupfile] -p [0.7] -d [0] </code></pre>
 
 #Publication
 Imashimizu et al. 2015
