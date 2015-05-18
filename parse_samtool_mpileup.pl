@@ -51,7 +51,7 @@ if(! -e $input_file){
 
 open (IN, "$input_file");
 
-print "refID\tposition\tref_base\tdepth\tA\tC\tG\tT\tN\t5prime\t5primeForward\t5primeReverse\tForward\tReverse\tInsertions\t\tDeletions\n";
+print "refID\tposition\tref_base\tdepth\tA\tC\tG\tT\tN\t3prime_rna_end\t3prime_rna_end_minus\t3prime_rna_end_plus\tminus\tplus\tInsertions\tDeletions\n";
 
 while (<IN>) {
     chomp;
@@ -202,10 +202,10 @@ while (<IN>) {
 
     if($depth>=$thre){
       if($depth==0){
-	print "$refID\t$pos\t$ref_base\t$depth\t$A\t$C\t$G\t$T\t$N\t$fivePrime\t$endFor\t$endRev\t$forward\t$reverse\t@insertions\t\t@deletions\n";
+	print "$refID\t$pos\t$ref_base\t$depth\t$A\t$C\t$G\t$T\t$N\t$fivePrime\t$endFor\t$endRev\t$forward\t$reverse\t@insertions\t@deletions\n";
       }
       elsif($fivePrime/$depth >= $prob){
-	print "$refID\t$pos\t$ref_base\t$depth\t$A\t$C\t$G\t$T\t$N\t$fivePrime\t$endFor\t$endRev\t$forward\t$reverse\t@insertions\t\t@deletions\n";
+	print "$refID\t$pos\t$ref_base\t$depth\t$A\t$C\t$G\t$T\t$N\t$fivePrime\t$endFor\t$endRev\t$forward\t$reverse\t@insertions\t@deletions\n";
       }
     }
 }
