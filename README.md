@@ -17,7 +17,7 @@ perl<br>
 <pre><code>$perl extractSequence.pl -i [fasta] -peak [peak position file] -l [10] -comp [false] </code></pre>
 
 #Publication
-Imashimizu et al. 2015
+<a href="http://www.ncbi.nlm.nih.gov/pubmed/25976475" target="_blank">Imashimizu et al. Genome Biol. 2015 May 15;16(1):98.</a>
 
 #Author
 Hiroki Takahashi
